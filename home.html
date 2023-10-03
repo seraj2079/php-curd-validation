@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Home</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #007BFF, #00BFFF);
+      background-color: rgba(0, 0, 255, 0.2);
+      /* height: 100vh; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+     
+
+    .navbar {
+      background: linear-gradient(to right, navy, #000080);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 60px;
+      padding: 0 20px;
+      z-index: 999;
+    }
+
+    .navbar-logo {
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .navbar-links {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .navbar-links li {
+      margin: 0 10px;
+    }
+
+    .navbar-links li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .navbar-btns {
+      display: flex;
+    }
+
+    .navbar-btns button {
+      margin-left: 10px;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .navbar-btns .btn-primary {
+      background-color: #007BFF;
+    }
+
+    .navbar-btns .btn-success {
+      background-color: #28A745;
+    }
+
+    .navbar-btns button a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 5px;
+      background: linear-gradient(to bottom, #007BFF, #00BFFF);
+      background-color: rgba(0, 0, 255, 0.2);
+      margin-top: 120px;
+    }
+
+    h1 {
+      color: #007BFF;
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      text-align: left;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .welcome-section {
+      background-color: #007BFF;
+      color: white;
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    .welcome-section h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .welcome-section p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .html-section {
+      background-color: #FFC107;
+      color: white;
+      padding: 20px;
+      border-radius: 5px;
+      margin-top: 30px;
+    }
+
+    .html-section h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .html-section ul {
+      margin-bottom: 20px;
+    }
+
+    .css-section {
+      background-color: #28A745;
+      color: white;
+      padding: 20px;
+      border-radius: 5px;
+      margin-top: 30px;
+    }
+
+    .css-section h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .css-section ul {
+      margin-bottom: 20px;
+    }
+
+    .php-section {
+      background-color: #DC3545;
+      color: white;
+      padding: 20px;
+      border-radius: 5px;
+      margin-top: 30px;
+    }
+
+    .php-section h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .php-section ul {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a class="navbar-logo" href="#">Logo</a>
+        <ul class="navbar-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="navbar-btns">
+          <button class="btn btn-primary"><a href="Main/Login.php">Login</a></button>
+          <button class="btn btn-success"><a href="Main/Registration.php">Register</a></button>
+        </div>
+      </nav>
+  <div class="container">
+    
+    <div class="html-section">
+      <h2>HTML</h2>
+      <ul>
+        <li>HTML stands for HyperText Markup Language.</li>
+        <li>HTML is the standard markup language for creating web pages.</li>
+        <li>HTML uses tags to structure the content and define the elements of a web page.</li>
+        <li>HTML tags are enclosed in angle brackets (< and >).</li>
+        <li>HTML tags are used to mark up different types of content, such as headings, paragraphs, links, images, etc.</li>
+        <li>HTML provides semantic elements to give meaning and structure to the content, such as &lt;header&gt;, &lt;nav&gt;, &lt;section&gt;, &lt;footer&gt;, etc.</li>
+        <li>HTML can be combined with CSS and JavaScript to create dynamic and interactive web pages.</li>
+      </ul>
+    </div>
+
+    <div class="css-section">
+      <h2>CSS</h2>
+      <ul>
+        <li>CSS stands for Cascading Style Sheets.</li>
+        <li>CSS is used to style the appearance of HTML elements on a web page.</li>
+        <li>CSS defines how elements should be displayed, including layout, colors, fonts, and more.</li>
+        <li>CSS works by selecting HTML elements and applying styles to them using selectors and declarations.</li>
+        <li>CSS styles can be specified inline within HTML tags, in the head section of an HTML file, or in external CSS files.</li>
+        <li>CSS provides a wide range of properties and values to control the visual presentation of web pages.</li>
+        <li>CSS can be used to create responsive designs that adapt to different screen sizes and devices.</li>
+      </ul>
+    </div>
+
+    <div class="php-section">
+      <h2>PHP</h2>
+      <ul>
+        <li>PHP stands for Hypertext Preprocessor.</li>
+        <li>PHP is a server-side scripting language.</li>
+        <li>PHP code is embedded within HTML code.</li>
+        <li>PHP files typically have a .php file extension.</li>
+        <li>PHP can interact with databases, handle form data, and generate dynamic web pages.</li>
+        <li>PHP is an open-source language with a large and active community.</li>
+        <li>PHP is cross-platform, supporting various operating systems.</li>
+        <li>PHP is easy to learn and has extensive documentation and resources available.</li>
+        <li>PHP supports a wide range of frameworks and libraries for web development.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>
